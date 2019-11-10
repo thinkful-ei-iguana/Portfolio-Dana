@@ -21,19 +21,18 @@ footer {
 }
 
 a {
-  color:#a6a864;
+  color: inherit;
+  position: inherit;
+  top: inherit;
   text-decoration: none; 
 }
 
 nav {
   background-color: rgba(0,0,0,0);
   position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+  top: 35px;
+  /* z-index: 10; */
   display: block;
-
 }
 
 header {
