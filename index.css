@@ -1,23 +1,20 @@
 * {
   box-sizing: border-box;
 }
+main {
+  width:100%;
+}
 
 body {
   font-family: Helvetica, Arial, "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   color:#a6a864;
   background-color: #241919;
   text-align: center;
   line-height: 1.5;
-  padding: 95px 1.5rem 0 2rem;
+  margin: 0;
   width: 100%;
-}
-
-nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
 }
 
 a {
@@ -42,38 +39,30 @@ nav {
   flex-wrap: wrap;
   width: 100%;
   background-color: #a59521;
+  background: linear-gradient(to bottom right, #b65757 1%, 10%, #a59521 95%);
   color: #260000;
 }
 
 header {
   padding: 12% 0;
+  margin: 95px 1.5rem 0 2rem;
 }
-/* 
-section {
-  min-height: 200px;
-  padding: 6% 0;
-  background-color: #bbb;
-}
-
-section:nth-child(even) {
-  background-color: #ddd;
-} */
 
 .tilt1 {
   transform: rotate(1deg);
 }
 
 .tilt2 {
-  transform: rotate(-2deg);
+  transform: rotate(-.5deg);
 }
 
 .tilt3 {
-  transform: rotate(2deg);
+  transform: rotate(.5deg);
 }
 
 
 .tilt4 {
-  transform: rotate(-3deg);
+  transform: rotate(-.5deg);
 }
 
 h1 .breakflex{
@@ -87,8 +76,14 @@ h1 {
   font-size: 2.95rem;
 }
 
-section {
-  padding: 0 0 90px 0;
+h2.hero-sub {
+  margin-left: 30%;
+  text-align: left;
+}
+
+section#portfolio, section#bio {
+  padding: 100px 0 90px 0;
+  margin: 0 1.5rem 0 2rem;
 }
 
 p {
@@ -102,5 +97,52 @@ p {
 }
 
 .contact {
-  margin-left: -13%;
+  /* margin-left: -13%; */
+}
+
+div.logo {
+  border: 7px solid #b88606;
+  text-align: center;
+  color: #b88606;
+  width: 100px;
+  height: 100px;
+  font-size: 23px;
+  letter-spacing: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo span {
+  display: inline-b;
+}
+.photobox > img {
+  width: 95%;
+  margin-bottom: 45px; 
+
+}
+
+.icons {
+  font-size: 40px;
+}
+
+footer {
+  background: inherit;
+}
+@media (min-width: 700px){
+body {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+}
+section#portfolio, section#bio {
+  padding: 180px 0 170px 0;
+  margin: 0 4rem 0 6rem;
+}
+nav>a {
+  font-size: 1.8rem;
+}
+address{
+  padding: 100px 0 200px 0;
+}
 }
