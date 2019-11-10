@@ -27,12 +27,22 @@ a {
   text-decoration: none; 
 }
 
+nav>a {
+  padding-right: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  font-size: 16px;
+}
+
 nav {
-  background-color: rgba(0,0,0,0);
   position: sticky;
   top: 35px;
-  /* z-index: 10; */
-  display: block;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #a59521;
+  color: #260000;
 }
 
 header {
