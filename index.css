@@ -65,6 +65,17 @@ header {
   transform: rotate(-.5deg);
 }
 
+.button {
+  padding: .5rem 2rem;
+  border: currentColor 1px solid;
+  border-radius: .5rem;
+}
+
+.button:hover {
+  background-color: #a59521;
+  color: #241919;
+}
+
 h1 .breakflex{
   display: inline-flex;
   text-align: left;
