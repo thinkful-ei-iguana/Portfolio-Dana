@@ -55,6 +55,9 @@ header {
   margin: 95px 1.5rem 0 2rem;
 }
 
+.arrowLeft {
+}
+
 /* .tilt1 {
   transform: rotate(1deg);
 }
@@ -151,7 +154,7 @@ div.logo {
   height: max-content;
   min-width: 300px;
   margin-left: 5vw;
-  width: 95%;
+  width: 90vw;
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
