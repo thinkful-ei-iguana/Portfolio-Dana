@@ -2,14 +2,15 @@
   box-sizing: border-box;
 }
 main {
-  width:100%;
+  width: 100%;
 }
 
 body {
-  font-family: Helvetica, Arial, "Open Sans", sans-serif;
+  font-family: Helvetica, Arial,
+    'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color:#a6a864;
+  color: #a6a864;
   background-color: #241919;
   text-align: center;
   line-height: 1.5;
@@ -21,12 +22,13 @@ a {
   color: inherit;
   position: inherit;
   top: inherit;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-nav>a {
+nav > a {
   padding-right: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier,
+    monospace;
   font-weight: 200;
   font-size: 16px;
 }
@@ -39,7 +41,12 @@ nav {
   flex-wrap: wrap;
   width: 100%;
   background-color: #a59521;
-  background: linear-gradient(to bottom right, #b65757 1%, 10%, #a59521 95%);
+  background: linear-gradient(
+    to bottom right,
+    #b65757 1%,
+    10%,
+    #a59521 95%
+  );
   color: #260000;
 }
 
@@ -48,27 +55,26 @@ header {
   margin: 95px 1.5rem 0 2rem;
 }
 
-.tilt1 {
+/* .tilt1 {
   transform: rotate(1deg);
 }
 
 .tilt2 {
-  transform: rotate(-.5deg);
+  transform: rotate(-0.5deg);
 }
 
 .tilt3 {
-  transform: rotate(.5deg);
+  transform: rotate(0.5deg);
 }
-
 
 .tilt4 {
-  transform: rotate(-.5deg);
-}
+  transform: rotate(-0.5deg);
+} */
 
 .button {
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   border: currentColor 1px solid;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .button:hover {
@@ -76,7 +82,7 @@ header {
   color: #241919;
 }
 
-h1 .breakflex{
+h1 .breakflex {
   display: inline-flex;
   text-align: left;
   font-size: 3rem;
@@ -92,7 +98,8 @@ h2.hero-sub {
   text-align: left;
 }
 
-section#portfolio, section#bio {
+/* section#portfolio, */
+section#bio {
   padding: 100px 0 90px 0;
   margin: 0 1.5rem 0 2rem;
 }
@@ -127,9 +134,23 @@ div.logo {
   display: inline-b;
 }
 .photobox > img {
-  width: 95%;
-  margin-bottom: 45px; 
+  min-width: 300px;
+  width: 30vw;
+  height: auto;
+  margin-right: 45px;
+  scroll-snap-align: start;
+}
 
+.photobox {
+  scroll-snap-type: x mandatory;
+  height: max-content;
+  min-width: 300px;
+
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .icons {
@@ -139,21 +160,22 @@ div.logo {
 footer {
   background: inherit;
 }
-@media (min-width: 700px){
-body {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.7;
-  margin: 0;
-}
-section#portfolio, section#bio {
-  padding: 180px 0 170px 0;
-  margin: 0 4rem 0 6rem;
-}
-nav>a {
-  font-size: 1.8rem;
-}
-address{
-  padding: 100px 0 200px 0;
-}
+@media (min-width: 700px) {
+  body {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+  }
+  section#portfolio,
+  section#bio {
+    padding: 180px 0 170px 0;
+    margin: 0 4rem 0 6rem;
+  }
+  nav > a {
+    font-size: 1.8rem;
+  }
+  address {
+    padding: 100px 0 200px 0;
+  }
 }
