@@ -35,7 +35,7 @@ nav > a {
 
 nav {
   position: sticky;
-  top: 35px;
+  top: 0;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -133,24 +133,34 @@ div.logo {
 .logo span {
   display: inline-b;
 }
+
 .photobox > img {
-  min-width: 300px;
-  width: 30vw;
+  /* min-width: 300px; */
+  width: 90vw;
   height: auto;
   margin-right: 45px;
   scroll-snap-align: start;
+}
+
+.project > p {
+  padding: 4vw;
 }
 
 .photobox {
   scroll-snap-type: x mandatory;
   height: max-content;
   min-width: 300px;
-
+  margin-left: 5vw;
   width: 95%;
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
   overflow-y: hidden;
+}
+
+.repo,
+.demo {
+  text-align: center;
 }
 
 .icons {
@@ -167,7 +177,7 @@ footer {
     line-height: 1.7;
     margin: 0;
   }
-  section#portfolio,
+  /* section#portfolio, */
   section#bio {
     padding: 180px 0 170px 0;
     margin: 0 4rem 0 6rem;
@@ -177,5 +187,12 @@ footer {
   }
   address {
     padding: 100px 0 200px 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .photobox > img {
+    width: 45vw;
+    max-width: 800px;
   }
 }
