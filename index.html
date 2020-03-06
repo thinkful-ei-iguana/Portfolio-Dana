@@ -16,6 +16,40 @@
       href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta
+      name="msapplication-TileColor"
+      content="#da532c"
+    />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+    />
   </head>
   <body>
     <header>
@@ -29,8 +63,8 @@
         >
       </h1>
       <h2 class="hero-sub">
-        I'm a full-stack developer & and
-        a design geek!
+        I'm a full-stack developer &
+        design geek!
       </h2>
     </header>
 
@@ -51,6 +85,107 @@
         >
       </nav>
       <section id="portfolio">
+        <section class="project">
+          <h3>Morkit</h3>
+
+          <p class="tilt1">
+            A marketplace for regular
+            people without inventories.
+            I was inspired by working at
+            farmer's markets throughout
+            my youth and people selling
+            their own things on the
+            internet through
+            unconventional means. I
+            noticed that the when you
+            remove the façade of an
+            online market place there
+            are certain social
+            interactions that are key to
+            a successful sale or trade.
+            I designed this project to
+            explore the possibility of
+            this socialized marketplace.
+          </p>
+          <p class="tilt2">
+            ReactJS, HTML5, Javascript,
+            Sass (using the BEM method)
+            & CSS on the front-end.
+          </p>
+          <p>
+            NodeJS, ExpressJS, Knex &
+            Postgresql on the back-end.
+          </p>
+
+          <p class="tilt3 demo">
+            <a
+              class="button"
+              href="https://morkit.now.sh"
+              target="_blank"
+              >DEMO!</a
+            >
+          </p>
+          <p class="tilt2 repo">
+            <a
+              class="button"
+              href="https://github.com/MrNanosh/Morkit-client"
+              target="_blank"
+              >Github Repo -- Client</a
+            >
+          </p>
+          <p class="tilt2 repo">
+            <a
+              class="button"
+              href="https://github.com/MrNanosh/morkit-server"
+              target="_blank"
+              >Github Repo -- Server</a
+            >
+          </p>
+          <h4>Screenshots</h4>
+          <div
+            class="photobox"
+            id="morkitPics"
+          >
+            <button
+              id="morkitRight"
+              class="fa fa-angle-left arrowLeft"
+            ></button>
+            <img
+              src="./images/morkitAllDesk.png"
+              alt="All listings -- Desktop view"
+            />
+            <img
+              src="./images/morkitInventoryDesk.png"
+              alt="Inventory View -- Desktop view"
+            />
+            <img
+              src="./images/morkitMessageDesk.png"
+              alt="Messages -- Desktop view"
+            />
+
+            <button
+              class="fa fa-angle-right arrowRight"
+              id="morkitleft"
+            ></button>
+          </div>
+          <h4>Mobile Screenshots</h4>
+          <div
+            class="photobox"
+            id="morkitMobilePics"
+          >
+            <button
+              id="morkitMobileRight"
+              class="fa fa-angle-left arrowLeft"
+            ></button
+            ><img
+              src="./images/morPhone123.png"
+              alt="Mobile views"
+            /><button
+              class="fa fa-angle-right arrowRight"
+              id="morkitmobileleft"
+            ></button>
+          </div>
+        </section>
         <section class="project">
           <h3>Quiz App</h3>
           <p class="tilt1">
@@ -93,7 +228,7 @@
             id="quizPics"
           >
             <button
-              id="quizleft"
+              id="quizright"
               class="fa fa-angle-left arrowLeft"
             ></button>
             <img
@@ -118,10 +253,56 @@
             />
             <button
               class="fa fa-angle-right arrowRight"
-              id="quizright"
+              id="quizleft"
             ></button>
           </div>
         </section>
+
+        <!-- <section class="project">
+          <h3>Project Name</h3>
+
+          <p class="tilt1">
+            description
+          </p>
+          <p class="tilt2">
+            technologies
+          </p>
+          <p class="tilt3 demo">
+            <a
+              class="button"
+              href=""
+              target="_blank"
+              >DEMO!</a
+            >
+          </p>
+          <p class="tilt2 repo">
+            <a
+              class="button"
+              href=""
+              target="_blank"
+              >Github Repo</a
+            >
+          </p>
+          <h4>Screenshots</h4>
+          <div
+            class="photobox"
+            id="projPics"
+          >
+            <button
+              id="projleft"
+              class="fa fa-angle-left arrowLeft"
+            ></button>
+            <img
+              src=""
+              alt="meaningful description"
+            />
+
+            <button
+              class="fa fa-angle-right arrowRight"
+              id="projright"
+            ></button>
+          </div>
+        </section> -->
       </section>
 
       <section id="contact">

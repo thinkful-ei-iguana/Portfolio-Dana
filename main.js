@@ -35,6 +35,16 @@ const projects = [
     screenshots: 'quizPics',
     goLeft: 'quizleft',
     goRight: 'quizright'
+  },
+  {
+    screenshots: 'morkitPics',
+    goLeft: 'morkitleft',
+    goRight: 'morkitRight'
+  },
+  {
+    screenshots: 'morkitMobilePics',
+    goLeft: 'morkitmobileleft',
+    goRight: 'morkitMobilesRight'
   }
 ];
 
