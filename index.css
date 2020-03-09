@@ -1,3 +1,7 @@
+:root {
+  --transition-speed: 600ms;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -30,8 +34,9 @@ a {
 }
 header {
   padding: 12% 0;
+  padding-left: 3rem;
   min-height: 100vh;
-  margin: 95px 1.5rem 0 2rem;
+  margin: 95px 1.5rem 0 4rem;
 }
 
 .arrowLeft,
@@ -191,7 +196,42 @@ footer {
   }
 }
 
-@media (min-width: 1100px) {
+@media (max-width: 370px) {
+  h1 .breakflex {
+    font-size: 2.5rem;
+  }
+  header {
+    padding: 0;
+  }
+}
+
+@media (max-width: 327px) {
+  h1 .breakflex {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (orientation: landscape) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .arrowLeft {
+    left: calc(5rem + 4vw);
+  }
+  .arrowRight {
+    right: calc(4vw + 5rem);
+    /* right: 5rem; */
+  }
+  .photobox {
+    width: calc(90vw - 10rem);
+    /* margin-left: 1rem; */
+    /* margin-left: calc(5vw + 1); */
+    /* width: 90vw; */
+  }
+  .photobox > img {
+    width: calc(90vw - 10rem);
+    /* max-width: 800px; */
+  }
+}
+
+@media only screen and (min-device-width: 1400px) and (orientation: landscape) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   body {
     position: relative;
   }
@@ -212,12 +252,13 @@ footer {
   }
 
   .photobox {
-    width: calc(90vw - 5rem);
-    margin-left: calc(5vw + 1rem);
+    width: calc(95vw - 10rem);
+    margin-left: 1rem;
+    /* margin-left: calc(5vw + 1); */
     /* width: 90vw; */
   }
   .photobox > img {
-    width: calc(45vw - 2.5rem);
+    width: calc(45vw - 5rem);
     /* max-width: 800px; */
   }
 }
