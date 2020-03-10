@@ -1,7 +1,6 @@
 let quizPics = document.getElementById(
   'quizPics'
 );
-
 function scroller(
   actionId,
   boxId,
@@ -15,11 +14,6 @@ function scroller(
       boxId
     );
     let scrollLength = el.clientWidth;
-    console.log(
-      leftOrRight === 'left'
-        ? 'left click'
-        : 'right click'
-    );
     el.scrollBy({
       left:
         leftOrRight === 'left'
@@ -44,7 +38,17 @@ const projects = [
   {
     screenshots: 'morkitMobilePics',
     goLeft: 'morkitmobileleft',
-    goRight: 'morkitMobilesRight'
+    goRight: 'morkitMobileRight'
+  },
+  {
+    screenshots: 'frenmoPics',
+    goLeft: 'frenmoleft',
+    goRight: 'frenmoright'
+  },
+  {
+    screenshots: 'spacerPics',
+    goLeft: 'spacerleft',
+    goRight: 'spacerright'
   }
 ];
 
@@ -64,33 +68,3 @@ for (let p of projects) {
     smallScreen ? 1 : 0.5
   );
 }
-
-// if (window.innerWidth < 1100) {
-//   scroller(
-//     projects[0].goLeft,
-//     projects[0].screenshots,
-//     'left',
-//     1
-//   );
-
-//   scroller(
-//     'quizright',
-//     'quizPics',
-//     'right',
-//     1
-//   );
-// } else {
-//   scroller(
-//     'quizleft',
-//     'quizPics',
-//     'left',
-//     0.5
-//   );
-
-//   scroller(
-//     'quizright',
-//     'quizPics',
-//     'right',
-//     0.5
-//   );
-// }
