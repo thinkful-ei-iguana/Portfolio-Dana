@@ -1,6 +1,14 @@
+:root {
+  --transition-speed: 400ms;
+}
+
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 100%;
+}
+
 main {
   width: 100%;
 }
@@ -8,10 +16,11 @@ main {
 body {
   font-family: Helvetica, Arial,
     'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: 300;
   color: #a6a864;
-  background-color: #241919;
+  background-color: #202110;
+  /* background-color: #241919; */
   text-align: center;
   line-height: 1.5;
   margin: 0;
@@ -24,40 +33,16 @@ a {
   top: inherit;
   text-decoration: none;
 }
-
-nav > a {
-  padding-right: 20px;
-  font-family: 'Courier New', Courier,
-    monospace;
-  font-weight: 200;
-  font-size: 16px;
-}
-
-nav {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: #a59521;
-  background: linear-gradient(
-    to bottom right,
-    #b65757 1%,
-    10%,
-    #a59521 95%
-  );
-  color: #260000;
-}
-
 header {
   padding: 12% 0;
-  margin: 95px 1.5rem 0 2rem;
+  padding-left: 3rem;
+  min-height: 100vh;
+  margin: 95px 1.5rem 0 4rem;
 }
 
 .arrowLeft,
 .arrowRight {
-  z-index: 2;
+  z-index: 0;
   position: absolute;
   align-self: center;
   font-size: 8rem;
@@ -189,6 +174,7 @@ div.logo {
 
 footer {
   background: inherit;
+  padding-bottom: 80px;
 }
 @media (min-width: 700px) {
   body {
@@ -212,9 +198,69 @@ footer {
   }
 }
 
-@media (min-width: 1100px) {
+@media (max-width: 370px) {
+  h1 .breakflex {
+    font-size: 2.5rem;
+  }
+  header {
+    padding: 0;
+  }
+}
+
+@media (max-width: 327px) {
+  h1 .breakflex {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (orientation: landscape) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .arrowLeft {
+    left: calc(5rem + 4vw);
+  }
+  .arrowRight {
+    right: calc(4vw + 5rem);
+    /* right: 5rem; */
+  }
+  .photobox {
+    width: calc(90vw - 10rem);
+    /* margin-left: 1rem; */
+    /* margin-left: calc(5vw + 1); */
+    /* width: 90vw; */
+  }
   .photobox > img {
-    width: 45vw;
+    width: calc(90vw - 10rem);
+    /* max-width: 800px; */
+  }
+}
+
+@media only screen and (min-device-width: 1400px) and (orientation: landscape) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  body {
+    position: relative;
+  }
+
+  .arrowLeft {
+    left: calc(4vw + 5rem);
+  }
+  .arrowRight {
+    right: calc(5vw - 4rem);
+    /* right: 5rem; */
+  }
+
+  main,
+  footer,
+  header {
+    margin-left: 5rem;
+    max-width: calc(100vw - 5rem);
+  }
+
+  .photobox {
+    width: calc(95vw - 10rem);
+    margin-left: 1rem;
+    /* margin-left: calc(5vw + 1); */
+    /* width: 90vw; */
+  }
+  .photobox > img {
+    width: calc(45vw - 5rem);
     /* max-width: 800px; */
   }
 }
