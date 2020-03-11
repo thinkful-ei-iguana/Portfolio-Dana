@@ -144,10 +144,19 @@ div.logo {
   scroll-snap-align: start;
 }
 
-.project {
-  padding-bottom: 40vh;
+.project-title {
+  font-family: 'Quattrocento',
+    'Times New Roman', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
 }
+
 .project > p {
+  padding-bottom: 40vh;
+  max-width: 1000px;
+}
+.project p {
   padding: 4vw;
 }
 
@@ -262,5 +271,16 @@ footer {
   .photobox > img {
     width: calc(45vw - 5rem);
     /* max-width: 800px; */
+  }
+}
+
+@media (min-width: 1800px) {
+  section p {
+    font-size: 2.5rem;
+  }
+  .column2 {
+    padding-left: 40vw;
+  }
+  .project {
   }
 }
