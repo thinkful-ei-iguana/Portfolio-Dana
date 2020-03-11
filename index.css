@@ -124,15 +124,21 @@ p {
 }
 
 div.logo {
-  border: 7px solid #b88606;
+  /* border: 7px solid #b88606; */
+  border: 0.4rem solid #b88606;
   text-align: center;
   color: #b88606;
-  width: 100px;
-  height: 100px;
-  font-size: 23px;
+  width: 6.1rem;
+  height: 6.1rem;
+  font-size: 1.5rem;
   letter-spacing: 1rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+}
+.logo > span {
+  display: block;
 }
 
 .logo span {
