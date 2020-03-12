@@ -40,7 +40,7 @@ header {
   padding: 12% 0;
   padding-left: 3rem;
   min-height: 100vh;
-  margin: 95px 1.5rem 0 4rem;
+  margin: 95px 1.5rem 0 0;
 }
 
 .arrowLeft,
@@ -221,7 +221,7 @@ footer {
     font-size: 2.5rem;
   }
   header {
-    padding: 0;
+    padding: 0 0 0 13px;
   }
 }
 
